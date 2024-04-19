@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Nano Router
+![Resultado final do projeto](./public/preview.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A aplicação React que desenvolvi oferece uma abordagem simples e eficaz para roteamento sem a dependência do react-router-dom. Em vez disso, utilizei os princípios fundamentais do React.js para criar um sistema de navegação intuitivo e fácil de entender.
 
-Currently, two official plugins are available:
+## Configuração do Ambiente
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+#### 1. Clone o repositório:
+```sh
+git clone https://github.com/manuelbento19/nano-router.git
 ```
+#### 2. Instale as dependências:
+**NPM**
+```sh
+    npm install
+```
+**Yarn**
+```sh
+    yarn add
+```
+  **Pnpm**
+  ```sh
+  pnpm install
+  ```
+#### 3. Rodar a Aplicação:
+**NPM**
+```sh
+    npm run dev
+```
+**Yarn**
+```sh
+    yarn dev
+```
+  **Pnpm**
+  ```sh
+  pnpm dev
+  ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<h2>👨‍🚀 Autor</h2>
+
+<table>
+  <tr>
+    <td>
+      <a href="https://github.com/manuelbento19">
+        <img src="https://avatars.githubusercontent.com/u/65732773" width="150px;" alt="Foto do Manuel Bento"/><br>
+        <sub>
+          <b>Manuel Bento</b>
+        </sub>
+      </a>
+    </td>
