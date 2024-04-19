@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -8,27 +12,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #494949;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #3b3b3b;
-}
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+.link{
+  text-decoration: inherit;
+  all: unset;
+  cursor: pointer;
+  color: #494949;
+  font-weight: 500;
+}
+.link:hover {
+  color: #3b3b3b;
+}
 .active-link{
   color: #535bf2;
+}
+ul{
+  list-style: none;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

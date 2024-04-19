@@ -7,7 +7,7 @@ type RouteContext = {
 
 const Context = createContext<RouteContext>({
     activePath: "",
-    changePath: () => null
+    changePath: () => {}
 })
 
 export const RouterProvider = ({children}:React.PropsWithChildren) => {

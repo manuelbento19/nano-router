@@ -7,10 +7,10 @@ type LinkProps = {
 }
 
 export const Link = ({to,children}:LinkProps) => {
-    const {changePath} = AppRouterContext();
+    const {changePath,activePath} = AppRouterContext();
 
     return (
-        <button onClick={()=>changePath(to)}>
+        <button className={`link ${to==activePath && "active-link"}`}  onClick={()=>changePath(to)}>
             {children}
         </button>
     )
