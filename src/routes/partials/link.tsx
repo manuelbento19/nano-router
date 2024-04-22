@@ -9,9 +9,14 @@ type LinkProps = {
 export const Link = ({to,children}:LinkProps) => {
     const {changePath,activePath} = AppRouterContext();
 
+    const naviate = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        e.preventDefault()
+        changePath(to)
+    }
+
     return (
-        <button className={`link ${to==activePath && "active-link"}`}  onClick={()=>changePath(to)}>
+        <a href={to} className={`link ${to==activePath && "active-link"}`}  onClick={naviate}>
             {children}
-        </button>
+        </a>
     )
 }
